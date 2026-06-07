@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="src/style/style.css" />
+    <title>Gibbs</title>
+  </head>
+
+  <body class="bg-black flex items-center justify-center">
+    <main
+      class="flex flex-col w-full max-w-[420px] rounded-[18px] text-white gap-4 transition-colors duration-500"
+      id="player-container"
+    >
+      <!--Header-->
+      <div class="flex gap-4 items-center w-full color-component h-[60px]">
+        <div class="logo-div w-[46px] h-[46px]">
+          <img src="src/images/1.jpg" alt="logo-img" class="logo-img" />
+        </div>
+        <div class="flex flex-col gap-1">
+          <img
+            class="logo-img-small"
+            src="src/images/GIBBS LOGOMARCA.png"
+            alt="logomarca"
+          />
+          <span class="text-xs text-gray-600">GIBBS (BR)</span>
+        </div>
+      </div>
+      <!--First block-->
+      <div class="flex gap-3 w-full items-stretch">
+        <div class="flex flex-1 min-w-0 flex-col gap-4">
+          <div class="relative w-full h-[163px] overflow-hidden rounded-[12px]">
+            <div
+              id="sliderTrack"
+              class="flex transition-transform duration-1000"
+            >
+              <img
+                class="w-full min-w-full shrink-0 h-full object-cover"
+                src="src/images/photo2.jpeg"
+                alt="img1"
+              />
+              <img
+                class="w-full min-w-full shrink-0 h-full object-cover"
+                src="src/images/photo1.jpeg"
+                alt="img2"
+              />
+              <img
+                class="w-full min-w-full shrink-0 h-full object-cover"
+                src="src/images/photo3.jpeg"
+                alt="img3"
+              />
+              <!-- Clone da primeira imagem -->
+              <img
+                class="w-full min-w-full shrink-0 h-full object-cover"
+                src="src/images/photo2.jpeg"
+                alt="img1-clone"
+              />
+            </div>
+          </div>
+
+          <div
+            class="w-full h-[70px] color-component relative flex flex-col items-center justify-center"
+          >
+            <img
+              class="absolute top-2 left-2"
+              src="src/images/live.svg"
+              alt="live"
+            />
+            <span class="text-xs text-gray-600">Ouvintes</span>
+            <h2 id="streams" class="text-2xl">0</h2>
+          </div>
+        </div>
+
+        <div class="flex flex-1 min-w-0 flex-col gap-4">
+          <a
+            href="https://soundcloud.com/lucasgibbsofc"
+            target="_blank"
+            class="btn w-full h-[70px] color-component flex justify-center cursor-pointer"
+          >
+            <img src="src/images/icons8-soundcloud.svg" alt="img-btn" />
+          </a>
+
+          <a
+            href="https://open.spotify.com/intl-pt/artist/72Cw5jkxXCO61rlJhZ7oXe?si=VgWc7swlQ7uyjeN0LHXlJA"
+            target="_blank"
+            class="btn w-full h-[70px] color-component flex justify-center cursor-pointer"
+          >
+            <img src="src/images/icons8-spotify.svg" alt="img-btn" />
+          </a>
+
+          <a
+            href="https://www.youtube.com/@GibbsBR"
+            target="_blank"
+            class="btn w-full h-[70px] color-component flex justify-center cursor-pointer"
+          >
+            <img src="src/images/icons8-youtube.svg" alt="img-btn" />
+          </a>
+        </div>
+      </div>
+      <!--Second block-->
+      <div class="flex gap-3 w-full items-stretch">
+        <a
+          href="https://www.instagram.com/gibbsmusic_/"
+          target="_blank"
+          class="btn flex justify-center items-center flex-1 min-w-0 h-[70px] color-component"
+        >
+          <img src="src/images/icons8-instagram.svg" alt="instagram" />
+        </a>
+
+        <a
+          href="https://www.facebook.com/lucasgibbsvasconcelos"
+          class="btn flex-1 min-w-0 color-component h-[70px] flex justify-center items-center"
+        >
+          <img src="src/images/icons8-facebook-novo.svg" alt="facebook" />
+        </a>
+
+        <a
+          href="https://x.com/tiwGibbs"
+          class="btn flex-1 min-w-0 color-component h-[70px] flex justify-center items-center"
+        >
+          <img src="src/images/icons8-twitter.svg" alt="twitter" />
+        </a>
+
+        <a
+          href="https://wa.link/5lbfct"
+          class="btn flex-1 min-w-0 color-component h-[70px] flex justify-center items-center"
+        >
+          <img src="src/images/icons8-whatsapp.svg" alt="whatsapp" />
+        </a>
+      </div>
+      <!--Spotify Playback-->
+      <div class="flex flex-col gap-6 items-center">
+        <span class="text-white text-sm">Último lançamento</span>
+        <div
+          id="content"
+          class="w-full flex items-center justify-center relative"
+        >
+          <iframe
+            data-testid="embed-iframe"
+            class="w-full max-w-full block"
+            src="https://open.spotify.com/embed/track/11bf0b4oBYg9ipzEKlnhGR?utm_source=generator&theme=0"
+            height="152"
+            frameborder="0"
+            allowfullscreen=""
+            allow="
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              fullscreen;
+              picture-in-picture;
+            "
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="flex flex-col items-center mt-5">
+        <span class="text-white text-xs mt-20">Desenvolvido por</span>
+        <a class="flex gap-1 items-center" href="#">
+          <img src="src/images/essa2.png" alt="logo-houston" class="w-[80px]" />
+        </a>
+      </div>
+    </main>
+  </body>
+
+  <script src="src/script/youtube/app.js" defer></script>
+  <script src="src/script/app.js" defer></script>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "link-in-bio-gibbs",
+  "version": "1.0.0",
+  "description": "Link in Bio do artista Gibbs",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "dev": "netlify dev",
+    "start": "netlify dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
