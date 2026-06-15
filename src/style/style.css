@@ -21,16 +21,13 @@ body {
 
 body {
   background:
-    linear-gradient(160deg, rgba(0,0,0,0.35), rgba(0,0,0,0.75)),
-    linear-gradient(160deg, #F7C03D 0%, #D2803E 20%, #3B1E7E 45%, #000 70%);
+    linear-gradient(160deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.75)),
+    linear-gradient(160deg, #f7a33d 0%, #d2803e 20%, #3b1e7e 45%, #000 70%);
   background-size: 200% 200%;
   animation: gradientShift 25s ease infinite;
   overflow-x: hidden;
-  padding:
-    env(safe-area-inset-top)
-    env(safe-area-inset-right)
-    env(safe-area-inset-bottom)
-    env(safe-area-inset-left);
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 main {
@@ -41,27 +38,33 @@ main {
   padding: 16px 12px;
   transition: background-color 0.4s ease;
   background:
-    linear-gradient(160deg, rgba(0,0,0,0.35), rgba(0,0,0,0.75)),
-    linear-gradient(160deg, #F7C03D 0%, #D2803E 20%, #3B1E7E 45%, #000 70%);
+    linear-gradient(160deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.75)),
+    linear-gradient(160deg, #f7c03d 0%, #d2803e 20%, #3b1e7e 45%, #000 70%);
   background-size: 200% 200%;
   animation: gradientShift 25s ease infinite;
 }
 
 @keyframes gradientShift {
-  0%   { background-position: 0% 0%; }
-  50%  { background-position: 100% 100%; }
-  100% { background-position: 0% 0%; }
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 .color-component {
-  background-color: #0f0f0fba;
+  background-color: #1f1f1fed;
   border-radius: 12px;
 }
 
 .logo-div {
   border-radius: 6px;
-  margin-left: 8px;
   border: 2px solid #ffffff;
+  margin-left: 8px!important;
 }
 
 .logo-img {
